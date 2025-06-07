@@ -14,14 +14,16 @@ body {
   width: 500px;
   height: 600px;
   border-radius: 50px;
+  transition: 0.3s;
 }
 .monitor {
   background-color: #bcf4f5;
   grid-column: span 4;
   border-radius: 10px;
-  font-size: 50px;
+  font-size: 2.0rem;
   display: flex;
   align-items: center;
+  padding: 10px;
 }
 .grid-element {
   background-color: #b4ebca;
@@ -39,5 +41,16 @@ body {
 }
 .grid-element:hover {
   transform: scale(1.1);
-  filter: saturate(.5);
+  filter: saturate(0.5);
+}
+@media (max-width: 620px) {
+  .parent {
+    width: 270px;
+    height: 400px;
+  }
+  .grid-element {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
 }
