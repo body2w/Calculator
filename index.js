@@ -7,8 +7,8 @@ btns.forEach((element) => {
       arr.push(element.innerHTML);
       monitor.innerHTML = arr.join("");
     } else if (element.innerHTML == "=") {
-      monitor.innerHTML = eval(arr.join(""));
-      arr = [eval(arr.join(""))];
+      monitor.innerHTML = eval(arr.join("").toString(10));
+      arr = [eval(arr.join("").toString(10))];
     } else if (element.innerHTML == "AC") {
       monitor.innerHTML = " ";
       arr = [];
