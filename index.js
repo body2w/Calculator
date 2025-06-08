@@ -22,6 +22,10 @@ btns.forEach((element) => {
               arr[i + z] = "";
               z++;
             }
+            var sliced = arr.slice(i + 1, arr.length);
+            if (sliced.every((Value) => Value == 0) == true) {
+              arr.splice(i + 1, arr.length, 0);
+            }
           }
         }
       }
