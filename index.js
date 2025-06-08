@@ -14,9 +14,14 @@ btns.forEach((element) => {
         if (arr[i] == "+" || arr[i] == "-" || arr[i] == "*" || arr[i] == "/") {
           if (typeof arr[i + 2] == "undefined") {
             console.log("1 Number");
-          } else {
+          } else if (arr[i + 1] == 0) {
             arr[i + 1] = "";
             console.log(arr);
+            var z = 2;
+            while (arr[i + z] == 0) {
+              arr[i + z] = "";
+              z++;
+            }
           }
         }
       }
