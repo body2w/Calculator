@@ -12,7 +12,9 @@ btns.forEach((element) => {
     } else if (element.innerHTML == "=") {
       for (var i = 0; i < arr.length; i++) {
         if (arr[i] == "+" || arr[i] == "-" || arr[i] == "*" || arr[i] == "/") {
-          if (arr[i + 1] == 0) {
+          if (typeof arr[i + 2] == "undefined") {
+            console.log("1 Number");
+          } else {
             arr[i + 1] = "";
             console.log(arr);
           }

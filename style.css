@@ -3,6 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 .parent {
@@ -20,7 +21,7 @@ body {
   background-color: #bcf4f5;
   grid-column: span 4;
   border-radius: 10px;
-  font-size: 2.0rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   padding: 10px;
